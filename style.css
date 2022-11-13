@@ -6,3 +6,6 @@
     z-index: 999;
     position: relative;
 }
+.darkmode-layer, .darkmode-toggle {
+    z-index: 500;
+  }
