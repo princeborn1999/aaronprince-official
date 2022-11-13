@@ -9,3 +9,8 @@
 .darkmode-layer, .darkmode-toggle {
     z-index: 500;
   }
+#footer{
+    z-index: 999;
+    position: fixed;
+    bottom: 0px;
+}
