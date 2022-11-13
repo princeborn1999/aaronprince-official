@@ -1,0 +1,8 @@
+*{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+#header{
+    z-index: 999;
+    position: relative;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "aaronprince-official",
+  "version": "1.0.0",
+  "description": "aaronprince official website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princeborn1999/aaronprince-official.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princeborn1999/aaronprince-official/issues"
+  },
+  "homepage": "https://github.com/princeborn1999/aaronprince-official#readme",
+  "dependencies": {
+
+  }
+}
