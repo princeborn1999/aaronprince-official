@@ -41,6 +41,8 @@
 
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 </head>
 
 <body>
@@ -86,7 +88,7 @@
     <div id="fullpage">
         
         <!-- HeroSection -->
-        <div class="section bg-warning bg-gradient relative" id="section1">
+        <div class="section bg-warning bg-gradient relative" id="fullpage-section">
             <div class="text-white">
                 <h1>This is Fullpage.js</h1>
                 <h2>You can try to scroll up or scroll down</h2>
@@ -106,7 +108,7 @@
         <!-- HeroSection -->
 
         <!-- Anime.js -->
-        <div class="section  bg-danger bg-gradient" id="section4">
+        <div class="section  bg-danger bg-gradient" id="anime-section">
             <h1 class="text-white">This is Anime.js</h1>
             <div class="containerAnime">
                 <h2><span>This is</span><br>A N I M E</h2>
@@ -115,7 +117,7 @@
         <!-- Anime.js -->
 
         <!-- Howler.js -->
-        <div class="section  bg-success bg-gradient" id="section3">
+        <div class="section  bg-success bg-gradient" id="howler-section">
             <h1 class="text-white">This is Howler.js</h1>
             <h2>Click the Play button</h2>
             <h2>and Let's party!</h2>
@@ -124,7 +126,7 @@
         <!-- Howler.js -->
 
         <!-- Video.js -->
-        <div class="section  bg-info bg-gradient" id="section3">
+        <div class="section  bg-info bg-gradient" id="video-section">
             <h1 class="text-white">This is Video.js</h1>
             <video class="video-js">
                 <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
@@ -134,16 +136,14 @@
         <!-- Video.js -->
 
         <!-- Chart.js -->
-        <div class="section  bg-primary bg-gradient" id="section4">
+        <div class="section  bg-primary bg-gradient" id="chart-section">
             <h1 class="text-white">This is Chart.js</h1>
+            <div class="container-sm">
+                <canvas id="myChart"></canvas>
+              </div>
         </div>
         <!-- Chart.js -->
-    
-        <!-- Cleave.js -->
-        <div class="section  bg-secondary bg-gradient" id="section4">
-            <h1 class="text-white">This is Cleave.js</h1>
-        </div>
-        <!-- Cleave.js -->
+
 
         <!-- Darkmode.js -->
         <div class="section  bg-dark bg-gradient" id="section4">
@@ -206,6 +206,38 @@
             }, 2000);
         });
     </script>
+    <!-- Chart -->
+    <script>
+        const labels = [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+      </script>
+      
     <!-- darkmode -->
     <script>
         const options = {
