@@ -30,6 +30,9 @@
     <!-- Howler.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Pixi.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/pixi.js@6.0.2/dist/browser/pixi.min.js"></script> -->
+
     <!-- Darkmode.js -->
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 </head>
@@ -70,21 +73,7 @@
     <!-- Footer -->
     <!-- Fullpage.js -->
     <div id="fullpage">
-        <!-- What I'm doing -->
-        <div class="section" id="section4">
-            <div class="d-flex">
-                <div class="bg-white" style="height: 100%; width:49%">
-                    <h1>RINCE</h1>
-                    <p>Time management App.</p>
-                    <p>run in multiple devices</p>
-
-                </div>
-                <div class="bg-dark" style="height: 100%; width:2%">
-                <p></p></div>
-                <div class="bg-white" style="height: 100%; width:49%">great</div>
-            </div>
-        </div>
-        <!-- What I'm doing -->
+        
         <!-- HeroSection -->
         <div class="section bg-warning bg-gradient relative" id="section1">
             <button type="button" class="btn btn-dark position-relative">
@@ -105,11 +94,7 @@
         </div>
         <!-- Howler.js -->
     
-        <!-- Pixi.js -->
-        <!-- <div class="section  bg-info bg-gradient" id="section2">
-            <h1 class="text-white text-justify">This is Pixi.js</h1>
-        </div> -->
-        <!-- Pixi.js -->
+
 
         <!-- Darkmode.js -->
         <div class="section  bg-dark bg-gradient" id="section4">
@@ -139,12 +124,23 @@
         </div> -->
         <!-- Cleave.js -->
 
-        <!-- Btw -->
-        <div class="section  bg-light bg-gradient" id="section4">
-            <h1 class="">BTW</h1>
+       
+        <!-- What I'm doing -->
+        <div class="section" id="section4">
+            <div class="d-flex">
+                <div class="bg-white" style="height: 100%; width:49.5%">
+                    <h1>RINCE</h1>
+                    <p>Time management App.</p>
+                    <p>run in multiple devices</p>
+                    <button>Going</button>
+                </div>
+                <div class="bg-dark" style="height: 45rem; width:1%">
+                <p></p></div>
+                <div class="bg-white" style="height: 100%;  width:49.5%">Drawing</div>
+                <button>Going</button>
+            </div>
         </div>
-        <!-- Btw -->
-
+        <!-- What I'm doing -->
 
        
     </div>
@@ -172,6 +168,7 @@
         }
         window.addEventListener('load', addDarkmodeWidget);
     </script>
+
     <!-- howler -->
     <script>
     function audioplay() {
@@ -181,6 +178,22 @@
         sound.play();
     }
     </script>
+    
+    <!-- Pixi -->
+    <!-- <script>
+        const Application = PIXI.Application;
+        const app = new Application({
+        width: 500,
+        height: 500,
+        transparent: false,
+        antialias: true,
+        });
+        app.renderer.backgroundColor = 0x23395d;
+        // app.renderer.resize(window.innerWidth, window.innerHeight);
+        // app.renderer.view.style.position = "absolute";
+        document.body.appendChild(app.view);
+    </script> -->
+
     <!-- fullpage -->
     <script>
         $(document).ready(function(){
