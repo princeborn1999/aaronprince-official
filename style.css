@@ -14,3 +14,10 @@
     position: fixed;
     bottom: 0px;
 }
+.block{
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: #e80202;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+}
