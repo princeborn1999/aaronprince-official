@@ -41,6 +41,7 @@
 
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 </head>
@@ -212,98 +213,18 @@
         
     </script>
     <!-- Chart -->
-    <script>
-        const labels = [
-          'January',
-          'February',
-          'March',
-          'April',
-          'May',
-          'June',
-        ];
-      
-        const data = {
-          labels: labels,
-          datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-          }]
-        };
-      
-        const config = {
-          type: 'line',
-          data: data,
-          options: {}
-        };
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
-      </script>
+    <script src="./scripts/chart.js">
+    </script>
       
     <!-- darkmode -->
-    <script>
-        const options = {
-            bottom: '64px', // default: '32px'
-            right: 'unset', // default: '32px'
-            left: '32px', // default: 'unset'
-            time: '0.5s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '#fff',  // default: '#fff'
-            buttonColorDark: '#100f2c',  // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
-            saveInCookies: false, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-        }
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-        
-        function addDarkmodeWidget() {
-          new Darkmode().showWidget();
-        }
-        window.addEventListener('load', addDarkmodeWidget);
+    <script src="./scripts/darkmode.js">
     </script>
     <!-- Anime -->
-    <script >
-        const container = document.querySelector('.containerAnime')
-        for(var i = 0; i <= 150; i++){
-            const blocks =document.createElement('div');
-            blocks.classList.add('block');
-            container.appendChild(blocks);
-        }
-        const animateBlocks = () => {
-            anime({
-                targets: '.block',
-                translateX: function(){ //左右分散
-                    return anime.random(200,1300);
-                },
-                translateY: function(){ //上下分散
-                    return anime.random(-100,500);
-                },
-                scale: function(){ //用來分散
-                    return anime.random(0,5);
-                },
-                easing: 'linear',
-                duration: 3000,
-                delay: anime.stagger(10),
-                complete: animateBlocks,
-            })
-        }
-        animateBlocks()
+    <script src="./scripts/anime.js" >
     </script>
 
-
     <!-- howler -->
-    <script>
-    function audioplay() {
-        var sound = new Howl({
-        src: ['./src/sound/jazzy-abstract-beat-11254.mp3']
-        });
-        sound.play();
-    }
+    <script src="./scripts/howler.js">
     </script>
     
     <!-- Pixi -->
