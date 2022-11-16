@@ -44,6 +44,14 @@
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -70,10 +78,10 @@
                     <li class="nav-item active"><a class="nav-link "id="toAnime" href="#">Anime</a></li>
                     <li class="nav-item active"><a class="nav-link "id="toHowler" href="#">Howler</a></li>
                     <li class="nav-item active"><a class="nav-link "id="toVideo" href="#">Video</a></li>
-                    <li class="nav-item active"><a class="nav-link disabled"id="toChart" href="#">Chart</a></li>
-                    <li class="nav-item active"><a class="nav-link disabled"id="toCleave" href="#">Cleave</a></li>
+                    <li class="nav-item active"><a class="nav-link "id="toChart" href="#">Chart</a></li>
                     <li class="nav-item active"><a class="nav-link "id="toDarkmode" href="#">Darkmode</a></li>
                     <li class="nav-item active"><a class="nav-link "id="toPixi" href="#">Pixi</a></li>
+                    <li class="nav-item active"><a class="nav-link disabled"id="toCleave" href="#">Cleave</a></li>
                     <li class="nav-item active"><a class="nav-link disabled"id="" href="#">Swiper</a></li>
                     <li class="nav-item active"><a class="nav-link disabled"id="" href="#">Three</a></li>
                     <li class="nav-item active"><a class="nav-link disabled"id="" href="#">MouseTrap</a></li>
@@ -103,12 +111,13 @@
                 
             </div>
             <button type="button" class="btn btn-dark position-relative">
+            <p></p>
             <h1>Hello World!</h1>
-            <p>Welcome to my yard!</p>
-            <p>I'm AaronPrince, This page is my work</p>
-            <p>JavaScript is a strong tool</p>
-            <p>You can enjoy the magic from javascript</p>
-            <p>in this page!</p>
+            <h3>Welcome to my yard!</h3>
+            <h4>I'm AaronPrince, This page is my work</h4>
+            <h4>JavaScript is a strong tool</h4>
+            <h4>You can enjoy the magic from javascript</h4>
+            <h4>in this page!</h4>
             <p></p> <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
             </button>
               <img src="./src/img/AP.png" alt="">
@@ -116,9 +125,19 @@
         <!-- HeroSection -->
 
         <!-- Swiper.js -->
-        <!-- <div class="section  bg-info bg-gradient" id="video-section">
-            <h1 class="text-white">This is Swiper.js</h1>
-        </div> -->
+        <div class="section bg-danger" id="anime-section">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         <!-- Swiper.js -->
 
         <!-- Anime.js -->
@@ -228,20 +247,11 @@
     <script src="./scripts/howler.js">
     </script>
     
+    <!-- Swiper -->
+    <script src="./scripts/swiper.js"></script>
+
     <!-- Pixi -->
-    <!-- <script>
-        const Application = PIXI.Application;
-        const app = new Application({
-        width: 500,
-        height: 500,
-        transparent: false,
-        antialias: true,
-        });
-        app.renderer.backgroundColor = 0x23395d;
-        // app.renderer.resize(window.innerWidth, window.innerHeight);
-        // app.renderer.view.style.position = "absolute";
-        document.body.appendChild(app.view);
-    </script> -->
+    <!-- <script src="./scripts/pixi.js"></script> -->
 
     <!-- fullpage -->
     <script>
